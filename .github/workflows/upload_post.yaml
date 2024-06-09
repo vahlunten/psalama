@@ -9,9 +9,17 @@ jobs:
   print_input:
     runs-on: ubuntu-latest
     steps:
-      - name: Print output
+      - name: Print input
         run: | 
           echo "${{ inputs.source }}"
+
+      - name: Print secret
+        run: |
+          echo "${{ secrets.instagram_token }}"
+
+      - name: Print env
+        run: |
+          echo "${{ env.source }}"
 
   
 
