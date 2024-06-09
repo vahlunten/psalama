@@ -1,0 +1,19 @@
+name: Upload instagram reel
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        type: string
+        description: source instagram account
+jobs:
+  print_input:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print output
+        run: | 
+          echo "${{ inputs.source }}"
+
+  
+
+      
+      
