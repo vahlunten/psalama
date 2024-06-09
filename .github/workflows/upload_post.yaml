@@ -15,11 +15,11 @@ jobs:
 
       - name: Print secret
         run: |
-          echo "${{ secrets.instagram_token }}"
+          echo "${{ secrets.INSTAGRAM_TOKEN }}"
 
       - name: Print env
         run: |
-          echo "${{ env.source }}"
+          echo "${{ env.SOURCE }}"
 
   
 
