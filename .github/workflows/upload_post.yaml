@@ -5,6 +5,12 @@ on:
       source:
         type: string
         description: source instagram account
+
+  push:
+    branches: [main]
+
+env: 
+  SOURCE_ACCOUNT: soooors
 jobs:
   print_input:
     runs-on: ubuntu-latest
@@ -20,7 +26,10 @@ jobs:
       - name: Print vars
         run: |
           echo "${{ vars.SOURCE }}"
-
+      - name: Print env
+        run: |
+          echo "$SOURCE_ACCOUNT"
+         
   
 
       
