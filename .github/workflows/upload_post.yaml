@@ -17,9 +17,9 @@ jobs:
         run: |
           echo "${{ secrets.INSTAGRAM_TOKEN }}"
 
-      - name: Print env
+      - name: Print vars
         run: |
-          echo "${{ env.SOURCE }}"
+          echo "${{ vars.SOURCE }}"
 
   
 
